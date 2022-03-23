@@ -1,0 +1,86 @@
+body {
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    background-color: gray;
+}
+
+.square {
+    width: 100px;
+    height: 100px;
+    background-color: beige;
+    border: 1px solid blue;
+    display: inline-block;
+}
+
+.O {
+    position: relative;
+}
+
+.O::after {
+    position: absolute;
+    content: "\1F369";
+    font-size: 50px;
+    line-height: 100px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.X {
+    position: relative;
+}
+
+.X::after {
+    position: absolute;
+    content: "\274C";
+    font-size: 50px;
+    line-height: 100px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+#restart {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: red;
+    border: 0;
+    border-radius: 10px;
+}
+
+#scoreboard {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    max-width: 40%;
+    margin: 0 auto;
+    margin-top: 3rem;
+    
+}
+
+.score {
+    background-color: white;
+    padding: 10px;
+    border: 3px solid #1b1b1b;
+    font-size: 40px;
+    color: black;
+}
+
+.winPosition {
+    background-color: blue;
+}
+
+.playerTime {
+    background-color: #181717;
+    color: white;
+}
+
+#player1.playerTime{
+    box-shadow: -5px -5px 10px red, 5px 5px 10px red;
+}
+
+#player2.playerTime{
+    box-shadow: -5px -5px 10px blue, 5px 5px 10px blue;
+}
